@@ -10,44 +10,54 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Math is a Visual Subject',
+    Svg: () => <img src={require('@site/static/img/SineCurveUnitCircle.gif').default} alt="Easy to Use" className={styles.featureGif} />,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+      Mathematics isn't just about numbers and equations;
+      it's a visual adventure that helps us understand the world around us.
+      From geometry to calculus, our curriculum leverages interactive graphics
+      and animations to bring abstract concepts to life. Experience the "aha"
+      moment as you see mathematical theories visually unfold before your eyes.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Embracing the Short-Video Revolution for Education',
+    Svg: () => <img src={require('@site/static/img/swiping.gif').default} alt="Easy to Use" className={styles.featureGif} />,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        In a world dominated by short, snappy videos, why should education be any different?
+        Our bite-sized video tutorials are tailored to fit into the busy lives of today's youth.
+        Engaging, quick, and packed with valuable insights, these videos make learning math not
+        just convenient but also incredibly effective.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Made for everyone.',
+    Svg: () => <img src={require('@site/static/img/kids.png').default} alt="Easy to Use" className={styles.featureGif} />,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        One size doesn't fit all, especially in education.
+        Our platform offers unparalleled customization to suit the unique needs
+        of both students and teachers. Whether you're looking to supplement classroom
+        lessons or find an independent study plan, our adaptive learning pathways can
+        be adjusted to meet your specific educational objectives.
       </>
     ),
   },
 ];
 
+
+
 function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
+    <div className={clsx(styles.feature)}>
+      <div className={clsx(styles.featureSvgWrapper)}>
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className={clsx(styles.featureText)}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
@@ -58,12 +68,10 @@ function Feature({title, Svg, description}: FeatureItem) {
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+      <div className={clsx('container', styles.featureListContainer)}>
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
       </div>
     </section>
   );

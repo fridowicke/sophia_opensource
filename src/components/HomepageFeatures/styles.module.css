@@ -5,7 +5,35 @@
   width: 100%;
 }
 
+
+.feature {
+  display: flex;
+  margin-bottom: 2rem; /* Space between features */
+  align-items: center; /* Center SVG and text vertically */
+}
+
+.featureSvgWrapper {
+  flex-shrink: 0; /* Don't allow SVG to shrink */
+}
+
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  width: 150px; /* Increased size */
+  height: 150px; /* Increased size */
+  margin-right: 6rem; /* Space between SVG and text */
+}
+
+.featureText {
+  text-align: left;
+  max-width: 600px; /* Constrain the width of the text */
+  color: white
+}
+
+.featureListContainer {
+  flex-direction: column;
+}
+
+.featureGif {
+  width: 150px; /* Increased size */
+  height: auto; /* Increased size */
+  margin-right: 6rem; /* Space between SVG and text */
 }

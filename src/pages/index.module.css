@@ -16,8 +16,112 @@
   }
 }
 
+/* Consistent Headings */
+.headingTextbook {
+  padding: 4rem 0;
+  text-align: left;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-left: 4rem;
+}
+
+
 .buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+
+.demoImage {
+  max-width: 80%;
+  height: auto;
+  position: relative; /* Add position relative */
+  z-index: 2; /* Increase the z-index of the image */
+  /* Add any other CSS properties you need */
+}
+
+
+/* Top Section */
+.redCircle {
+  width: 150px; /* You can adjust the size */
+  height: 150px;
+  background-color: rgb(255, 75, 70);
+  border-radius: 50%; /* Makes it a circle */
+  position: relative; /* Allows positioning children */
+  z-index: 1;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.imageOverCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Make sure it's above the red circle */
+}
+
+.headingTextbook {
+  padding: 4rem 0;
+  text-align: left;
+  font-size: 2.5rem;
+  color: rgb(7,12,24);
+  font-weight: bold;
+  margin-left: 4rem;
+}
+
+.whiteHeadingTextbook {
+  padding: 4rem 0;
+  text-align: left;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  margin-left: 4rem;
+}
+
+
+
+/*Mission part*/
+.missionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.missionFlexContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.missionImage {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.missionContent {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+
+/*Main part*/
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(7,12,24);
+}
+
+.mainFlexContainer {
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
