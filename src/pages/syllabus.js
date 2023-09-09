@@ -45,7 +45,7 @@ export default function MathCurriculum() {
                     <h3 className="vertical-timeline-element-title">Introduction to Functions</h3>
                     <p>In this chapter, we introduce the concept of functions. We are working with real-world examples to provide an intuitive understanding.</p>
                     <div className="buttonContainerStyle">
-                      <a href="/videos" className="buttonStyle">Videos</a>
+                      <a href="/Func_Chapter_1" className="buttonStyle">Videos</a>
                       <a href="/code" className="buttonStyle">Code</a>
                     </div>
                   </VerticalTimelineElement>
