@@ -60,7 +60,7 @@ const config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/Sophia-Dot.png',
     navbar: {
       title: 'Sophia Video Curriculum',
       logo: {
@@ -77,7 +77,7 @@ const config = {
         { to: '/blog', label: 'Blog', position: 'left' },
         { to: '/syllabus', label: 'Syllabus', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Sophia-Edu-Labs',
           label: 'GitHub',
           position: 'right',
         },
@@ -99,16 +99,16 @@ const config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'TikTok',
+              href: 'https://www.tiktok.com/@sophiaedulabs',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Youtube',
+              href: 'https://www.youtube.com/@sophiaedulabs',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Instagram',
+              href: 'https://www.instagram.com/sophiaedulabs/',
             },
           ],
         },
@@ -116,17 +116,21 @@ const config = {
           title: 'More',
           items: [
             {
+              label: 'Sophia Edu Labs',
+              href: 'https://www.sophiaedulabs.com',
+            },
+            {
               label: 'Blog',
               to: '/blog',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Sophia-Edu-Labs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sophia Edu Labs.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -134,7 +138,7 @@ const config = {
     },
     colorMode: {
       defaultMode: 'light',
-      disableSwitch: false,
+      disableSwitch: true,
       respectPrefersColorScheme: false,
     },
   },
