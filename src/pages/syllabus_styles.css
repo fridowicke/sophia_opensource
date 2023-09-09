@@ -1,0 +1,65 @@
+/* For the full screen timeline */
+.vertical-timeline {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .vertical-timeline-element {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  /* Additional custom styles */
+  .pageStyle {
+    background-color: rgb(7, 12, 24);
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .timelineContainerStyle {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .timelineElementStyle {
+    background:transparent;
+    color: rgb(7, 12, 24);
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .buttonContainerStyle {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+.buttonStyle {
+    background: rgb(255, 75, 70);  /* Change the background to red */
+    color: white;
+    padding: 8px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  .twoColumnContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .leftColumn, .rightColumn {
+    width: 48%; /* adjust as needed */
+    text-align: left;
+  }
+  
+  /* Add any additional styling you need for each column */
+  
