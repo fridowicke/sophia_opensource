@@ -21,7 +21,7 @@ const chapters = [
 
 const MathCurriculum = () => (
   <SubjectCurriculum
-    title="Math Curriculum: Functions"
+    title="Math Curriculum: Power Functions"
     description="Math Curriculum Overview"
     chapters={chapters}
   />

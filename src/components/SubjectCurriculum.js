@@ -19,14 +19,23 @@ const ChapterElement = ({ chapter }) => (
   </VerticalTimelineElement>
 );
 
+const BACK_URL = "/syllabus";
+
 const SubjectCurriculum = ({ title, description, chapters }) => (
   <Layout title={title} description={description}>
     <div className="pageStyle">
-      <h1>{title}</h1>
+      <div className='twoColumnContainer'>
+        <div className='LeftColumn'>
+          <a href={BACK_URL} className="backButtonStyle">←</a>
+        </div>
+        <div className='RightColumn'>
+          <h1>{title}</h1>
+        </div>
+        <div></div>
+      </div>
       <div className="pageStyle">
         <div className="twoColumnContainer">
           <div className="leftColumn">
-            {/* Your left column content */}
           </div>
           <div className="rightColumn">
             <div className="timelineContainerStyle">

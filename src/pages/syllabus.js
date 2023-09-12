@@ -32,11 +32,6 @@ const chapters = [
     title: 'Exponential Functions',
     description: 'Ever noticed how your video game scores shoot up super fast? That\'s exponential growth for you!',
     chapterLink: '/Func_Chapter_6',
-  },
-  {
-    title: 'Sine and Cosine Functions',
-    description: 'These functions are like the swings in a park, going up and down smoothly. We’ll explore how they work and why they’re important.',
-    chapterLink: '/Func_Chapter_7',
   }
 ];
 

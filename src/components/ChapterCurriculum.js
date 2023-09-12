@@ -25,7 +25,6 @@ const ChapterCurriculum = ({ title, description, chapters }) => (
       <div className="pageStyle">
         <div className="twoColumnContainer">
           <div className="leftColumn">
-            {/* Your left column content */}
           </div>
           <div className="rightColumn">
             <div className="timelineContainerStyle">

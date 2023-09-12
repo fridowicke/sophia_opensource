@@ -55,11 +55,28 @@
     display: flex;
     justify-content: space-between;
   }
+
+
   
   .leftColumn, .rightColumn {
-    width: 48%; /* adjust as needed */
+    width: 48%;
     text-align: left;
   }
   
-  /* Add any additional styling you need for each column */
+  .backButtonStyle {
+    background: rgb(255, 75, 70);  /* Change the background to red */
+    color: white;
+    padding: 8px 32px;
+    border-radius: 5px;
+    border: 2px solid transparent;  /* Set an invisible border */
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;  /* Optional: add a transition */
+  }
+  
+  .backButtonStyle:hover {
+    border-color: white;  /* Set the border color to white when hovering */
+  }
+  
+  
   

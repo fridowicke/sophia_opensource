@@ -212,10 +212,20 @@ export default function MathCurriculum() {
     }
   ];
 
+  const BACK_URL = "/Func_Chapter_1";
+
   return (
     <Layout title="Math Curriculum" description="Math Curriculum Overview">
       <div className="pageStyle">
-        <h1>Math Curriculum: Functions - Chapter 1.1: Intro to Functions</h1>
+        <div className='twoColumnContainer'>
+          <div className='LeftColumn'>
+            <a href={BACK_URL} className="backButtonStyle">←</a>
+          </div>
+          <div className='RightColumn'>
+            <h1>Math Curriculum: Functions - Chapter 1.1: Intro to Functions</h1>
+          </div>
+          <div></div>
+          </div>
       </div>
       <div className="pageStyle">
         <div className="timelineContainerStyle">
