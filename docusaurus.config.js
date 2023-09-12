@@ -68,16 +68,17 @@ const config = {
         src: 'img/Sophia-Dot.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Tutorial',
+        // },
+        { to: 'https://github.com/Sophia-Edu-Labs/sophia-math#readme', label: 'Tutorial', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
-        { to: '/syllabus', label: 'Syllabus', position: 'left' },
+        { to: '/syllabus', label: 'Curriculum', position: 'left' },
         {
-          href: 'https://github.com/Sophia-Edu-Labs',
+          href: 'https://github.com/Sophia-Edu-Labs/sophia-math',
           label: 'GitHub',
           position: 'right',
         },
