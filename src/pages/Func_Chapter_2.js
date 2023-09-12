@@ -1,49 +1,37 @@
+// MathCurriculum.js
 import React from 'react';
-import Layout from '@theme/Layout';
-import { VerticalTimeline } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import '../components/player_styles.css'; // Import the styles
-import CurriculumElement from '../components/CurriculumElement'; // Import the component
+import SubjectCurriculum from '../components/SubjectCurriculum';  // Adjust the path accordingly
 
-export default function MathCurriculum() {
-  const curriculumElements = [
-    {
-        title: 'Video 3: Intro to Linear Functions',
-        videoSources: [
-          { name: 'Show Question', url: 'https://embed.api.video/vod/vi2HovHuCSsfIhDi5JUtq9kI' },
-          { name: 'See Answer A', url: 'https://embed.api.video/vod/viFGvWU6h5yfOlGfOufMf7g' },
-          { name: 'See Answer B', url: 'https://embed.api.video/vod/vi4m5VylwzMEXbBBOsbaCzLJ' },
-          { name: 'See Answer C', url: 'https://embed.api.video/vod/vi3vpEuShzbAUc1zWKuJ0bS0' },
-          { name: 'See Answer D', url: 'https://embed.api.video/vod/vi7PC9SKcQLZ5xB962pUYUQz' },
-        ],
-      },
-      {
-        title: 'Video 3: Intro to Linear Functions',
-        videoSources: [
-          { name: 'Show Question', url: 'https://embed.api.video/vod/vi2HovHuCSsfIhDi5JUtq9kI' },
-          { name: 'See Answer A', url: 'https://embed.api.video/vod/viFGvWU6h5yfOlGfOufMf7g' },
-          { name: 'See Answer B', url: 'https://embed.api.video/vod/vi4m5VylwzMEXbBBOsbaCzLJ' },
-          { name: 'See Answer C', url: 'https://embed.api.video/vod/vi3vpEuShzbAUc1zWKuJ0bS0' },
-          { name: 'See Answer D', url: 'https://embed.api.video/vod/vi7PC9SKcQLZ5xB962pUYUQz' },
-        ],
-      },
-    // ... add more Math curriculum elements
-  ];
+const chapters = [
+  {
+    title: 'Intro to Linear Functions, from Graph to Term',
+    description: 'Learn how to understand linear functions starting from their graphical representation, and how to translate that into a mathematical term.',
+    videoLink: '/Func_Chapter_2_1',
+    codeLink: '/code2',
+  },
+  {
+    title: 'Linear Functions: from Term to Graph',
+    description: 'This subchapter shows how to plot a graph based on the mathematical term of a linear function.',
+    videoLink: '/Func_Chapter_2_2',
+    codeLink: '/code2',
+  },
+  {
+    title: 'Functions and Linear Equalities',
+    description: 'Learn how to use linear functions to solve problems related to linear equalities.',
+    videoLink: '/Func_Chapter_2_3',
+    codeLink: '/code2',
+  },
+];
 
-  return (
-    <Layout title="Math Curriculum" description="Math Curriculum Overview">
-      <div className="pageStyle">
-        <h1>Math Curriculum: Functions</h1>
-      </div>
-      <div className="pageStyle">
-        <div className="timelineContainerStyle">
-          <VerticalTimeline layout="1-column-left">
-            {curriculumElements.map((element, index) => (
-              <CurriculumElement key={index} {...element} />
-            ))}
-          </VerticalTimeline>
-        </div>
-      </div>
-    </Layout>
-  );
-}
+
+const MathCurriculum = () => (
+  <SubjectCurriculum
+    title="Math Curriculum: Functions"
+    description="Math Curriculum Overview"
+    chapters={chapters}
+  />
+);
+
+export default MathCurriculum;
+
+
