@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksophia_open_source=self.webpackChunksophia_open_source||[]).push([[4770],{8491:a=>{a.exports=JSON.parse('{"label":"Team Sophia","permalink":"/blog/tags/team-sophia","allTagsPath":"/blog/tags","count":1}')}}]);

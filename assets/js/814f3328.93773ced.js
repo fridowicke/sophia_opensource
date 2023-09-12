@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksophia_open_source=self.webpackChunksophia_open_source||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Launch of Sophia Open Source","permalink":"/blog/launch-sophia-opensource"}]}')}}]);
