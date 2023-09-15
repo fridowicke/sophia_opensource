@@ -7,13 +7,13 @@ const chapters = [
     title: 'Intro to Power Functions',
     description: 'This subchapter introduces the concept of power functions and how they differ from other types of functions.',
     videoLink: '/Func_Chapter_5_1',
-    codeLink: '/code5',
+    codeLink: 'https://github.com/Sophia-Edu-Labs/sophia-math/blob/main/scenes/Func/Func_5%3A%20Power%20Functions/Func_5_1.py',
   },
   {
     title: 'Powers and Roots',
     description: 'Learn about the mathematical properties of powers and roots within the context of power functions.',
     videoLink: '/Func_Chapter_5_2',
-    codeLink: '/code5',
+    codeLink: 'https://github.com/Sophia-Edu-Labs/sophia-math/blob/main/scenes/Func/Func_5%3A%20Power%20Functions/Func_5_2.py',
   },
 
 ];
